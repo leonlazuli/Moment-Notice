@@ -63,24 +63,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Title" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwA-hi-dCj">
-                                <rect key="frame" x="20" y="128" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwA-hi-dCj">
+                                <rect key="frame" x="51" y="128" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event start" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-Wa-vtV">
-                                <rect key="frame" x="20" y="173" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM-DD-YYYY HH:MM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-Wa-vtV">
+                                <rect key="frame" x="51" y="173" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-n0-heE">
+                                <rect key="frame" x="6" y="131" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yI-EO-ILN">
+                                <rect key="frame" x="6" y="176" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1I-su-Yv3">
+                                <rect key="frame" x="14" y="221" width="16" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decription" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdl-WR-Nbr">
+                                <rect key="frame" x="121" y="288" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM-DD-YYYY HH:MM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sj7-K4-KoB">
+                                <rect key="frame" x="51" y="217" width="249" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-F8-YAK">
+                                <rect key="frame" x="20" y="317" width="280" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95924935649999998" blue="0.73300479129999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sj7-K4-KoB" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="51" id="0eX-Xz-VL6"/>
+                            <constraint firstItem="1C2-F8-YAK" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="20" id="469-va-jJG"/>
+                            <constraint firstItem="4yI-EO-ILN" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="6" id="6fL-Yy-5KC"/>
+                            <constraint firstItem="bdl-WR-Nbr" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="121" id="9HM-63-x87"/>
+                            <constraint firstAttribute="trailing" secondItem="RgV-n0-heE" secondAttribute="trailing" constant="281" id="BV1-2g-JlA"/>
+                            <constraint firstItem="bdl-WR-Nbr" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="224" id="BYP-K0-vKc"/>
                             <constraint firstItem="jwA-hi-dCj" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="64" id="C6k-UK-165"/>
+                            <constraint firstItem="H1I-su-Yv3" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="14" id="EfU-gf-jbe"/>
+                            <constraint firstAttribute="trailing" secondItem="1C2-F8-YAK" secondAttribute="trailing" constant="20" id="Ele-As-NIl"/>
+                            <constraint firstAttribute="trailing" secondItem="0kk-Wa-vtV" secondAttribute="trailing" constant="20" id="Fum-ZG-YXK"/>
+                            <constraint firstItem="RgV-n0-heE" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="67" id="L7f-SD-sde"/>
+                            <constraint firstAttribute="trailing" secondItem="H1I-su-Yv3" secondAttribute="trailing" constant="290" id="NZi-cV-5qH"/>
+                            <constraint firstItem="RgV-n0-heE" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="6" id="WcY-yc-tNF"/>
                             <constraint firstAttribute="trailing" secondItem="jwA-hi-dCj" secondAttribute="trailing" constant="20" id="dEu-LL-oTG"/>
-                            <constraint firstItem="jwA-hi-dCj" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="20" id="k0v-Hi-uV5"/>
+                            <constraint firstItem="1C2-F8-YAK" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="253" id="e16-EH-G65"/>
+                            <constraint firstItem="4yI-EO-ILN" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="112" id="fr8-0X-kNK"/>
+                            <constraint firstItem="0kk-Wa-vtV" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="51" id="hNy-Km-hap"/>
+                            <constraint firstItem="jwA-hi-dCj" firstAttribute="leading" secondItem="dEJ-5Q-vgF" secondAttribute="leading" constant="51" id="k0v-Hi-uV5"/>
+                            <constraint firstAttribute="trailing" secondItem="4yI-EO-ILN" secondAttribute="trailing" constant="274" id="lTe-ZH-eHD"/>
+                            <constraint firstItem="sj7-K4-KoB" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="153" id="m7b-4c-9c8"/>
+                            <constraint firstAttribute="trailing" secondItem="sj7-K4-KoB" secondAttribute="trailing" constant="20" id="pfJ-rc-YTU"/>
+                            <constraint firstItem="H1I-su-Yv3" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="157" id="q0H-hv-SNH"/>
+                            <constraint firstItem="0kk-Wa-vtV" firstAttribute="top" secondItem="C4f-T4-72d" secondAttribute="bottom" constant="109" id="zT2-dG-fvQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bdl-WR-Nbr" secondAttribute="trailing" constant="120" id="zgM-5C-ojB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Event" id="XTK-Bj-xxI">
@@ -98,6 +157,9 @@
                     <connections>
                         <outlet property="EventTitle" destination="jwA-hi-dCj" id="hCV-b1-J1A"/>
                         <outlet property="doneButton" destination="gnl-1q-tO8" id="rrG-nR-H9Y"/>
+                        <outlet property="eventDetail" destination="1C2-F8-YAK" id="AMx-al-1De"/>
+                        <outlet property="fromDate" destination="0kk-Wa-vtV" id="cT1-4g-iSF"/>
+                        <outlet property="toDate" destination="sj7-K4-KoB" id="Wl0-BQ-geQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrM-Ip-wSB" userLabel="First Responder" sceneMemberID="firstResponder"/>

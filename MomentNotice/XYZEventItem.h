@@ -10,7 +10,9 @@
 
 @interface XYZEventItem : NSObject
 @property NSString* eventName;
+@property NSString* eventDetail;
 @property BOOL completed;
-@property (readonly) NSDate* creationDate;
+@property NSDate* fromDate;
+@property NSDate* toDate;
 
 @end

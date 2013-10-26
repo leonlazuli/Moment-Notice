@@ -69,7 +69,30 @@
     
     // Configure the cell...
     XYZEventItem *eventItem = self.EventItems[indexPath.row];
-    cell.textLabel.text = eventItem.eventName;
+    
+    //transform the formdate to string
+    NSString *fromDate = [[NSString alloc] init];
+    NSDateFormatter * df2 = [[NSDateFormatter alloc] init];
+    [df2 setDateFormat:@"MMM-dd HH:mm a"];
+    fromDate = [df2 stringFromDate: eventItem.fromDate];
+    //combine the title with from date
+    const int Len = 20;
+    NSString *showItem = [[NSString alloc] init];
+    if(eventItem.eventName.length < Len)
+    {
+        showItem = [[NSString alloc]
+                    initWithFormat:@"%@... at %@", eventItem.eventName,
+                    fromDate];
+        cell.textLabel.text = showItem;
+    }
+    else
+    {
+        showItem = [[NSString alloc]
+                    initWithFormat:@"%@... at %@", [eventItem.eventName substringToIndex:Len],
+                    fromDate];
+        cell.textLabel.text = showItem;
+    }
+    
     if(eventItem.completed)
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     else
