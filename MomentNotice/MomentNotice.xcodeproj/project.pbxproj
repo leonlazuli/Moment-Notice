@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69951740181B27E5004108FB /* XYZAddNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6995173F181B27E5004108FB /* XYZAddNewEventViewController.m */; };
+		69951743181B28CA004108FB /* XYZAllEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69951742181B28CA004108FB /* XYZAllEventsViewController.m */; };
+		69951746181B2B3D004108FB /* XYZEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69951745181B2B3D004108FB /* XYZEventItem.m */; };
 		69E3EBA2181B1FEA0059FF20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA1181B1FEA0059FF20 /* Foundation.framework */; };
 		69E3EBA4181B1FEA0059FF20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA3181B1FEA0059FF20 /* CoreGraphics.framework */; };
 		69E3EBA6181B1FEA0059FF20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA5181B1FEA0059FF20 /* UIKit.framework */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6995173E181B27E5004108FB /* XYZAddNewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZAddNewEventViewController.h; sourceTree = "<group>"; };
+		6995173F181B27E5004108FB /* XYZAddNewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAddNewEventViewController.m; sourceTree = "<group>"; };
+		69951741181B28CA004108FB /* XYZAllEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZAllEventsViewController.h; sourceTree = "<group>"; };
+		69951742181B28CA004108FB /* XYZAllEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAllEventsViewController.m; sourceTree = "<group>"; };
+		69951744181B2B3D004108FB /* XYZEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZEventItem.h; sourceTree = "<group>"; };
+		69951745181B2B3D004108FB /* XYZEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZEventItem.m; sourceTree = "<group>"; };
 		69E3EB9E181B1FEA0059FF20 /* MomentNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E3EBA1181B1FEA0059FF20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E3EBA3181B1FEA0059FF20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,7 +95,13 @@
 		69E3EB95181B1FEA0059FF20 = {
 			isa = PBXGroup;
 			children = (
+				69951744181B2B3D004108FB /* XYZEventItem.h */,
+				69951745181B2B3D004108FB /* XYZEventItem.m */,
 				69E3EBD6181B203E0059FF20 /* main.storyboard */,
+				69951741181B28CA004108FB /* XYZAllEventsViewController.h */,
+				69951742181B28CA004108FB /* XYZAllEventsViewController.m */,
+				6995173E181B27E5004108FB /* XYZAddNewEventViewController.h */,
+				6995173F181B27E5004108FB /* XYZAddNewEventViewController.m */,
 				69E3EBA9181B1FEA0059FF20 /* MomentNotice */,
 				69E3EBC6181B1FEA0059FF20 /* MomentNoticeTests */,
 				69E3EBA0181B1FEA0059FF20 /* Frameworks */,
@@ -253,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69951740181B27E5004108FB /* XYZAddNewEventViewController.m in Sources */,
 				69E3EBB4181B1FEA0059FF20 /* XYZAppDelegate.m in Sources */,
 				69E3EBB0181B1FEA0059FF20 /* main.m in Sources */,
 				69E3EBB7181B1FEA0059FF20 /* MomentNotice.xcdatamodeld in Sources */,
+				69951743181B28CA004108FB /* XYZAllEventsViewController.m in Sources */,
+				69951746181B2B3D004108FB /* XYZEventItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +476,7 @@
 				69E3EBD2181B1FEA0059FF20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69E3EBD3181B1FEA0059FF20 /* Build configuration list for PBXNativeTarget "MomentNoticeTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +485,7 @@
 				69E3EBD5181B1FEA0059FF20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
