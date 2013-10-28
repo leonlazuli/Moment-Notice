@@ -14,15 +14,12 @@
 #import "XYZEditEventViewController.h"
 
 //Database Definition
-//
 #define DBNAME    @"Moment.sqlite"
 
 //Main Menu
-//
 @interface XYZAllEventsViewController ()
 
 //Create Row View
-//
 @property NSMutableArray *EventItems;
 @property int selectedRow;
 
@@ -32,16 +29,17 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"Source Controller = %@", [segue sourceViewController]);
-    NSLog(@"Destination Controller = %@", [segue destinationViewController]);
-    NSLog(@"Segue Identifier = %@", [segue identifier]);
+    //If the segue is actived by editEventSegue
     if([[segue identifier] isEqualToString:@"editEventSegue"])
     {
-        NSLog(@"Segue Identifier = %@ is running", [segue identifier]);
+        //fetch the navigationController from the segue
         UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+        //use the navigationController to fecth the editEventContrller object
         XYZEditEventViewController *linkedInViewController = [[navigationController viewControllers] lastObject];
+        // fetch the indexPath tapped by users
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         self.selectedRow = indexPath.row;
+        //assign
         linkedInViewController.thisEventItem = self.EventItems[indexPath.row];
     }
 }
@@ -50,7 +48,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -143,8 +140,6 @@
         [self.tableView beginUpdates];
         [self.tableView reloadData];
         [self.tableView endUpdates];
-        //        [self.EventItems addObject:newEvent];
-        //        [self.tableView reloadData];
     }
 }
 -(void)loadInitialData
@@ -174,7 +169,6 @@
     if(sqlite3_prepare_v2(db, sql, -1, &sqlStatement, NULL) != SQLITE_OK)
     {
         while (sqlite3_step(sqlStatement)==SQLITE_ROW) {
-        //get the data from the query result
             XYZEventItem * evt = [[XYZEventItem alloc] init];
             NSString *temp = [[NSString alloc] init];
             evt.eventName= [NSString stringWithUTF8String:(char *) sqlite3_column_text(sqlStatement,1)];
