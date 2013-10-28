@@ -6,7 +6,16 @@
 //  Copyright (c) 2013 LiuLeon. All rights reserved.
 //
 
+
 #import "XYZAddNewEventViewController.h"
+
+#define DBNAME    @"Moment.sqlite"
+#define TITLE      @"title"
+#define EVENTDETAIL     @"eventdetail"
+#define FROMDATE   @"fromdate"
+#define TODATE @"todate"
+#define TABLENAME @"EVENTS"
+
 
 @interface XYZAddNewEventViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *EventTitle;
@@ -26,45 +35,58 @@
     if(self.EventTitle.text.length > 0)
     {
         
-        
+        //update the screen view
         self.addEventItem = [[XYZEventItem alloc] init];
         self.addEventItem.eventName = self.EventTitle.text;
         self.addEventItem.completed = NO;
         self.addEventItem.eventDetail = self.eventDetail.text;
         // get current time
-        NSString* tempDate;
+        NSString* tempDate1;
         NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"MM-dd-YYYY hh:mm"];
-        tempDate = [formatter stringFromDate:[NSDate date]];
-        //        NSLog(@"sfsdf %@",date);
-        
-        // NSDateFormatter * df2 = [[NSDateFormatter alloc] init];
-        //[df2 setDateFormat:@"MMM-dd-YYYY HH:mm a"];
-        //tempDate = [df2 stringFromDate:getDate];
-        
-        //get current time
+        [formatter setDateFormat:@"MM-dd-yyyy HH:mm"];
+        tempDate1 = [formatter stringFromDate:[NSDate date]];
         
         // notice that getDatestring is nil if the format is fualt  $$$$$$$$
-        NSString *fromDateString = [[NSString alloc] initWithString:self.fromDate.text];
-        NSString *toDateString = [[NSString alloc] initWithString:self.toDate.text];
+        NSString *tempString = self.fromDate.text;
         NSDate *getDateString = [[NSDate alloc] init];
-        getDateString = [formatter dateFromString:fromDateString];
-        self.addEventItem.fromDate = getDateString;
-        getDateString = [formatter dateFromString:toDateString];
+        getDateString = [formatter dateFromString:tempString];
+        self.addEventItem.fromDate= getDateString;
+        getDateString = [formatter dateFromString:self.toDate.text];//wenti
         self.addEventItem.toDate = getDateString;
         
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documents = [paths objectAtIndex:0];
+        NSString *database_path = [documents stringByAppendingPathComponent:DBNAME];
+        if (sqlite3_open([database_path UTF8String], &db) != SQLITE_OK) {
+            sqlite3_close(db);
+            NSLog(@"open fails");
+        }
+        //insert the value into the database
+        NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS EVENTS (ID INTEGER PRIMARY KEY AUTOINCREMENT,title TEXT,eventdetail TEXT,fromdate TEXT,todate TEXT)";
+        [self execSql:sqlCreateTable];
+        NSString *sql1 = [NSString stringWithFormat:
+                          @"INSERT INTO '%@' ('%@','%@','%@','%@') VALUES ('%@','%@','%@','%@')",
+                          TABLENAME, TITLE,EVENTDETAIL,FROMDATE,TODATE,self.EventTitle.text,self.eventDetail.text,self.fromDate.text,self.toDate.text];
         
-        NSDateFormatter * df2 = [[NSDateFormatter alloc] init];
-        [df2 setDateFormat:@"MMM-dd-YYYY HH:mm a"];
-        tempDate = [df2 stringFromDate:getDateString];
-        NSLog(@"系统sdfsdf当前时间为：%@",tempDate);
+        
+        
+        [self execSql:sql1];
+        sqlite3_close(db);
         
         
         
-      
     }
     
 }
+-(void)execSql:(NSString *)sql
+{
+    char *err;
+    if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK) {
+        sqlite3_close(db);
+        NSLog(@"fails operating data");
+    }
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -78,7 +100,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString* tempDate;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM-dd-yyyy HH:mm"];
+    tempDate = [formatter stringFromDate:[NSDate date]];
+    self.fromDate.text = tempDate;
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

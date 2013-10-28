@@ -10,6 +10,7 @@
 		69951740181B27E5004108FB /* XYZAddNewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6995173F181B27E5004108FB /* XYZAddNewEventViewController.m */; };
 		69951743181B28CA004108FB /* XYZAllEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69951742181B28CA004108FB /* XYZAllEventsViewController.m */; };
 		69951746181B2B3D004108FB /* XYZEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69951745181B2B3D004108FB /* XYZEventItem.m */; };
+		69CA1DF0181C68B80024C826 /* XYZEditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CA1DEF181C68B80024C826 /* XYZEditEventViewController.m */; };
 		69E3EBA2181B1FEA0059FF20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA1181B1FEA0059FF20 /* Foundation.framework */; };
 		69E3EBA4181B1FEA0059FF20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA3181B1FEA0059FF20 /* CoreGraphics.framework */; };
 		69E3EBA6181B1FEA0059FF20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3EBA5181B1FEA0059FF20 /* UIKit.framework */; };
@@ -26,6 +27,8 @@
 		69E3EBCB181B1FEA0059FF20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69E3EBC9181B1FEA0059FF20 /* InfoPlist.strings */; };
 		69E3EBCD181B1FEA0059FF20 /* MomentNoticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3EBCC181B1FEA0059FF20 /* MomentNoticeTests.m */; };
 		69E3EBD7181B203E0059FF20 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E3EBD6181B203E0059FF20 /* main.storyboard */; };
+		B9DDE023181CEF950083F7E1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DDE022181CEF950083F7E1 /* libsqlite3.dylib */; };
+		B9DDE025181CEFA20083F7E1 /* libedit.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DDE024181CEFA20083F7E1 /* libedit.3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 		69951742181B28CA004108FB /* XYZAllEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAllEventsViewController.m; sourceTree = "<group>"; };
 		69951744181B2B3D004108FB /* XYZEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZEventItem.h; sourceTree = "<group>"; };
 		69951745181B2B3D004108FB /* XYZEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZEventItem.m; sourceTree = "<group>"; };
+		69CA1DEE181C68B80024C826 /* XYZEditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZEditEventViewController.h; sourceTree = "<group>"; };
+		69CA1DEF181C68B80024C826 /* XYZEditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZEditEventViewController.m; sourceTree = "<group>"; };
 		69E3EB9E181B1FEA0059FF20 /* MomentNotice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentNotice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E3EBA1181B1FEA0059FF20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E3EBA3181B1FEA0059FF20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +69,8 @@
 		69E3EBCA181B1FEA0059FF20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		69E3EBCC181B1FEA0059FF20 /* MomentNoticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentNoticeTests.m; sourceTree = "<group>"; };
 		69E3EBD6181B203E0059FF20 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		B9DDE022181CEF950083F7E1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B9DDE024181CEFA20083F7E1 /* libedit.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libedit.3.0.dylib; path = usr/lib/libedit.3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DDE025181CEFA20083F7E1 /* libedit.3.0.dylib in Frameworks */,
+				B9DDE023181CEF950083F7E1 /* libsqlite3.dylib in Frameworks */,
 				69E3EBA4181B1FEA0059FF20 /* CoreGraphics.framework in Frameworks */,
 				69E3EBA8181B1FEA0059FF20 /* CoreData.framework in Frameworks */,
 				69E3EBA6181B1FEA0059FF20 /* UIKit.framework in Frameworks */,
@@ -95,6 +104,8 @@
 		69E3EB95181B1FEA0059FF20 = {
 			isa = PBXGroup;
 			children = (
+				69CA1DEE181C68B80024C826 /* XYZEditEventViewController.h */,
+				69CA1DEF181C68B80024C826 /* XYZEditEventViewController.m */,
 				69951744181B2B3D004108FB /* XYZEventItem.h */,
 				69951745181B2B3D004108FB /* XYZEventItem.m */,
 				69E3EBD6181B203E0059FF20 /* main.storyboard */,
@@ -121,6 +132,8 @@
 		69E3EBA0181B1FEA0059FF20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9DDE024181CEFA20083F7E1 /* libedit.3.0.dylib */,
+				B9DDE022181CEF950083F7E1 /* libsqlite3.dylib */,
 				69E3EBA1181B1FEA0059FF20 /* Foundation.framework */,
 				69E3EBA3181B1FEA0059FF20 /* CoreGraphics.framework */,
 				69E3EBA5181B1FEA0059FF20 /* UIKit.framework */,
@@ -274,6 +287,7 @@
 				69E3EBB7181B1FEA0059FF20 /* MomentNotice.xcdatamodeld in Sources */,
 				69951743181B28CA004108FB /* XYZAllEventsViewController.m in Sources */,
 				69951746181B2B3D004108FB /* XYZEventItem.m in Sources */,
+				69CA1DF0181C68B80024C826 /* XYZEditEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MomentNotice/MomentNotice-Prefix.pch";
 				INFOPLIST_FILE = "MomentNotice/MomentNotice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,7 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MomentNotice/MomentNotice-Prefix.pch";
 				INFOPLIST_FILE = "MomentNotice/MomentNotice-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
