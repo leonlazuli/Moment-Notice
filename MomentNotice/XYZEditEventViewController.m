@@ -28,10 +28,14 @@
 @end
 
 @implementation XYZEditEventViewController
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender //this method means after editing, press the savebutton, what will happen
+
+//prepare for the Segue. Pass data from This editEventController to allEventController
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //The the segue is not activated by save button, then just return
     if(sender != self.saveButton)
         return;
+    //else if the EventTitle has been inputed then update the data of that Item in database
     if(self.EventTitle.text.length > 0)
     {
         

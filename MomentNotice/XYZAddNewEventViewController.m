@@ -35,18 +35,20 @@
     if(self.EventTitle.text.length > 0)
     {
         
-        //update the screen view
+        //initial the new eventItem and assin the corresponding value from
+        //the user input
         self.addEventItem = [[XYZEventItem alloc] init];
         self.addEventItem.eventName = self.EventTitle.text;
         self.addEventItem.completed = NO;
         self.addEventItem.eventDetail = self.eventDetail.text;
-        // get current time
+        
+        //transform the data from NSString to NSDate and assign them
+        //to the eventItem
         NSString* tempDate1;
         NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"MM-dd-yyyy HH:mm"];
         tempDate1 = [formatter stringFromDate:[NSDate date]];
-        
-        // notice that getDatestring is nil if the format is fualt  $$$$$$$$
+        // notice that getDatestring is nil if the format is fualt
         NSString *tempString = self.fromDate.text;
         NSDate *getDateString = [[NSDate alloc] init];
         getDateString = [formatter dateFromString:tempString];
@@ -100,6 +102,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //get the current system time and put it in the textfield of fromDate
+    //for the convenience of user input
     NSString* tempDate;
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MM-dd-yyyy HH:mm"];

@@ -34,12 +34,12 @@
     {
         //fetch the navigationController from the segue
         UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
-        //use the navigationController to fecth the editEventContrller object
+        //use the navigationController to fecth the editEventController object
         XYZEditEventViewController *linkedInViewController = [[navigationController viewControllers] lastObject];
         // fetch the indexPath tapped by users
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         self.selectedRow = indexPath.row;
-        //assign
+        //pass the selected eventItem to the editEventcontroller
         linkedInViewController.thisEventItem = self.EventItems[indexPath.row];
     }
 }
@@ -55,6 +55,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //initial the array of EventItems
     self.EventItems = [[NSMutableArray alloc] init];
     [self loadInitialData];
  
@@ -83,21 +84,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //this is the prototype cell we use to display events
     static NSString *CellIdentifier = @"ListPrototypeCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     XYZEventItem *eventItem = self.EventItems[indexPath.row];
     
-    //transform the formdate to string
+    //transform the fromDate to string
     NSString *fromDate = [[NSString alloc] init];
     NSDateFormatter * df2 = [[NSDateFormatter alloc] init];
-    [df2 setDateFormat:@"MMM-dd HH:mm a"];
+    [df2 setDateFormat:@"MMM-dd HH:mm"];
     fromDate = [df2 stringFromDate: eventItem.fromDate];
-    //combine the title with from date
-    const int Len = 10;
+    //combine the title with fromDate
+    const int Len = 12; // The length of EventTitle displayed in screen
     NSString *showItem = [[NSString alloc] init];
-    //print it on the screen
+    //if the tile of the event is less than Len, then let it as it is
+    //and combine the title will the event start time
     if(eventItem.eventName.length < Len)
     {
         showItem = [[NSString alloc]
@@ -105,6 +108,8 @@
                     fromDate];
         cell.textLabel.text = showItem;
     }
+    //else just use the first Len(12) character and combine it with
+    //the event start time
     else
     {
         showItem = [[NSString alloc]
@@ -113,30 +118,40 @@
         cell.textLabel.text = showItem;
     }
     
-    
+    //make the detailDisclosureButton visable
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 
+// this function will be activated when the segue is unwind from
+//addNewEventContoller
 -(IBAction)unwindToAllEvents:(UIStoryboardSegue*) segue
 {
+    //fetch the addNewEventController from segue
     XYZAddNewEventViewController *source = [segue sourceViewController];
+    //pass the new event to a temp variable
     XYZEventItem *newEvent = source.addEventItem;
     if(newEvent != Nil)
     {
+        //if new event is not Nil then add it into the eventItems array
         [self.EventItems addObject:newEvent];
         [self.tableView reloadData];
     }
 }
 
+//this function will be activated when the segue is unwind from
+//editEventController
 -(IBAction)unwindToAllEventFromEdit:(UIStoryboardSegue*) segue
 {
+    // fetch the editEventController from segue
     XYZEditEventViewController *source = [segue sourceViewController];
     XYZEventItem *newEvent = source.thisEventItem;
     if(newEvent != Nil)
     {
-        NSLog(@"\nselected %d\n",self.selectedRow);
+        //if fetch a correct eventItem
+        //replace the edited item with the original one
         [self.EventItems replaceObjectAtIndex:self.selectedRow withObject:newEvent];
+        //update the display
         [self.tableView beginUpdates];
         [self.tableView reloadData];
         [self.tableView endUpdates];
@@ -221,6 +236,7 @@
 }
 
 
+//this is a function for test
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
@@ -230,6 +246,7 @@
     
 }
 
+//for futuer use
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
 }
