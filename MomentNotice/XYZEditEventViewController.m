@@ -10,7 +10,7 @@
 
 #define DBNAME    @"Moment.sqlite"
 #define TITLE      @"title"
-#define EVENTDETAIL     @"eventdetail"
+#define EVENTDETAIL  @"eventdetail"
 #define FROMDATE   @"fromdate"
 #define TODATE     @"todate"
 #define TABLENAME @"EVENTS"

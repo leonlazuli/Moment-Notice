@@ -42,6 +42,8 @@
         self.addEventItem.completed = NO;
         self.addEventItem.eventDetail = self.eventDetail.text;
         
+        
+        //formatter
         //transform the data from NSString to NSDate and assign them
         //to the eventItem
         NSString* tempDate1;
@@ -49,6 +51,8 @@
         [formatter setDateFormat:@"MM-dd-yyyy HH:mm"];
         tempDate1 = [formatter stringFromDate:[NSDate date]];
         // notice that getDatestring is nil if the format is fualt
+        
+        //User date input
         NSString *tempString = self.fromDate.text;
         NSDate *getDateString = [[NSDate alloc] init];
         getDateString = [formatter dateFromString:tempString];

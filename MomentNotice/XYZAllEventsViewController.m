@@ -97,7 +97,7 @@
     [df2 setDateFormat:@"MMM-dd HH:mm"];
     fromDate = [df2 stringFromDate: eventItem.fromDate];
     //combine the title with fromDate
-    const int Len = 12; // The length of EventTitle displayed in screen
+    const int Len = 3; // The length of EventTitle displayed in screen
     NSString *showItem = [[NSString alloc] init];
     //if the tile of the event is less than Len, then let it as it is
     //and combine the title will the event start time
