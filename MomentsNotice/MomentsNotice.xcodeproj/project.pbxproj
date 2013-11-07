@@ -27,6 +27,7 @@
 		69CFBAE1182B4FA200B74101 /* AssistantLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */; };
 		69CFBAE4182B501800B74101 /* MNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE3182B501800B74101 /* MNUser.m */; };
 		69CFBAE7182B686000B74101 /* primaryMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */; };
+		69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE9182B798D00B74101 /* EventsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		69CFBAE3182B501800B74101 /* MNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNUser.m; sourceTree = "<group>"; };
 		69CFBAE5182B686000B74101 /* primaryMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primaryMainMenuViewController.h; sourceTree = "<group>"; };
 		69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = primaryMainMenuViewController.m; sourceTree = "<group>"; };
+		69CFBAE8182B798D00B74101 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		69CFBAE9182B798D00B74101 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				692A8ACD182B041E00D5B741 /* MNAppDelegate.h */,
 				692A8ACE182B041E00D5B741 /* MNAppDelegate.m */,
 				692A8AD6182B041E00D5B741 /* MainStoryboard.storyboard */,
+				69CFBAE8182B798D00B74101 /* EventsViewController.h */,
+				69CFBAE9182B798D00B74101 /* EventsViewController.m */,
 				69CFBAE5182B686000B74101 /* primaryMainMenuViewController.h */,
 				69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */,
 				69CFBAE2182B501800B74101 /* MNUser.h */,
@@ -298,6 +303,7 @@
 				69CFBAE1182B4FA200B74101 /* AssistantLogInViewController.m in Sources */,
 				69CFBAE4182B501800B74101 /* MNUser.m in Sources */,
 				69CFBAE7182B686000B74101 /* primaryMainMenuViewController.m in Sources */,
+				69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
