@@ -416,7 +416,6 @@
         <class className="PrimaryLoginViewController" superclassName="LogInViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PrimaryLoginViewController.h"/>
             <relationships>
-                <relationship kind="action" name="logInButton:"/>
                 <relationship kind="outlet" name="userNameTextField" candidateClass="UITextField"/>
             </relationships>
         </class>

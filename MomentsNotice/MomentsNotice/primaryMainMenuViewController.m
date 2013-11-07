@@ -19,8 +19,6 @@
 -(void) setUser:(MNUser *)user
 {
     _user = user;
-    NSString *welcomeStr = [[NSString alloc] initWithFormat:@"Welcome to MomentsNotice!  %@ ", _user.nickName ];
-    self.welcomeLable.text = welcomeStr;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,6 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *welcomeStr = [[NSString alloc] initWithFormat:@"Welcome to MomentsNotice!  %@ ", self.user.nickName ];
+    self.welcomeLable.text = welcomeStr;
 	// Do any additional setup after loading the view.
 }
 

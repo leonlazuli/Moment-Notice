@@ -7,6 +7,8 @@
 //
 
 #import "PrimaryLoginViewController.h"
+#import "primaryMainMenuViewController.h"
+
 
 @interface PrimaryLoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -25,7 +27,39 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    //???
+    if([[segue identifier] isEqualToString:@"primaryLogin"])
+    {
+        if(!self.logInUser) // make sure the logInUser is not nil
+        {
+            UIAlertView *alert = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:@"logIn user hasn't been initialed"
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+        
+        if(!self.logInUser.userID) // make sure the loginUser has been assigned with value
+        {
+            UIAlertView *alert = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:@"logInUser hasn't been assigned value "
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+
+        if([segue.destinationViewController isKindOfClass:[primaryMainMenuViewController class]])
+        {
+            primaryMainMenuViewController *menuVC = segue.destinationViewController;
+            menuVC.user = self.logInUser;
+        }
+        
+    }
 }
 
 - (IBAction)logInButton:(id)sender  //??? when click the login button
