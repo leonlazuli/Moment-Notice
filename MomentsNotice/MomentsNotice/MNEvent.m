@@ -9,14 +9,14 @@
 #import "MNEvent.h"
 
 @implementation MNEvent
--(void) initWithTitle:(NSString*)titile
+-(void) initWithTitle:(NSString*)title
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
                toDate:(NSDate*)todate
             creatorID:(NSString*)creatorid
 {
     [self init];
-    self.titile = titile;
+    self.title = title;
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
@@ -28,7 +28,7 @@
 }
 
 //for reloading events from database
--(void) reloadWithTitle:(NSString*)titile
+-(void) reloadWithTitle:(NSString*)title
                  detail:(NSString*)detail
                fromDate:(NSDate*)fromdate
                  toDate:(NSDate*)todate
@@ -38,7 +38,7 @@
                  passed:(BOOL)p
 {
     [self init];
-    self.titile = titile;
+    self.title = title;
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;

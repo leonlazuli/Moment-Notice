@@ -10,7 +10,7 @@
 
 @interface MNEvent : NSObject
 
-@property (strong,nonatomic) NSString* titile;
+@property (strong,nonatomic) NSString* title;
 @property (strong,nonatomic) NSString* detail;
 @property (strong,nonatomic) NSDate* fromDate;
 @property (strong,nonatomic) NSDate* toDate;
@@ -21,14 +21,14 @@
 @property BOOL passed;
 
 //for the creation of a new event
--(void) initWithTitle:(NSString*)titile
+-(void) initWithTitle:(NSString*)title
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
                toDate:(NSDate*)todate
             creatorID:(NSString*)creatorid;
 
 //for reloading events from database
--(void) reloadWithTitle:(NSString*)titile
+-(void) reloadWithTitle:(NSString*)title
                  detail:(NSString*)detail
                fromDate:(NSDate*)fromdate
                  toDate:(NSDate*)todate
