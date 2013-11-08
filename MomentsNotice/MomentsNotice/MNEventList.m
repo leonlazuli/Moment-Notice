@@ -43,7 +43,6 @@
     MNEvent* event2 = [[MNEvent alloc] initWithTitle:@"rocket" detail:@"" fromDate:fromdate toDate:todate creatorID:user.userID];
     [self.eventlist addObject:event1];
     [self.eventlist addObject:event2];
-    event2 = self.eventlist[0];
     return self;
     //demo
     
