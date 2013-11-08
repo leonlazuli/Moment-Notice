@@ -9,65 +9,14 @@
 #import "MNEvent.h"
 
 @implementation MNEvent
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) initWithTitle:(NSString*)title
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-
--(id) init
-{
-    self = [super init];
-    self.titile = [[NSString alloc] init];
-    self.detail = [[NSString alloc] init];
-    self.fromDate = [[NSDate alloc] init];
-    self.toDate = [[NSDate alloc] init];
-    self.creatorID = [[NSString alloc] init];
-    self.creatDate = [NSDate date];
-    return self;
-    
-    
-}
-
 -(id) initWithTitle:(NSString*)titile
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
                toDate:(NSDate*)todate
             creatorID:(NSString*)creatorid
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    [self init];
-    self.title = title;
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
     self.titile = titile;
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
@@ -80,23 +29,7 @@
 }
 
 //for reloading events from database
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) reloadWithTitle:(NSString*)title
-=======
 -(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
                  detail:(NSString*)detail
                fromDate:(NSDate*)fromdate
                  toDate:(NSDate*)todate
@@ -105,22 +38,8 @@
               completed:(BOOL)c
                  passed:(BOOL)p
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    [self init];
-    self.title = title;
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
     self.titile = titile;
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
