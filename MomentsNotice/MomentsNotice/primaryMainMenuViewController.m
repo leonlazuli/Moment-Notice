@@ -7,6 +7,7 @@
 //
 
 #import "primaryMainMenuViewController.h"
+#import "futureEventsTableViewController.h"
 
 @interface primaryMainMenuViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLable;
@@ -15,9 +16,26 @@
 
 @implementation primaryMainMenuViewController
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//unwind function for the segue from Event
+-(IBAction)unwindFromEvent:(UIStoryboardSegue*)sender
 {
     
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"primaryMenuToEvent"])
+    {
+        UINavigationController* navigationController = [[UINavigationController alloc] init];
+        //use the segue to fetch the tabbarcontroller
+        UITabBarController* tbc = [segue destinationViewController];
+        //user the tabbarcontroller to fetch the navigationcontroller
+        navigationController = (UINavigationController*)[[tbc customizableViewControllers] objectAtIndex:0];
+        //use the navigationController to fecth the editEventController object
+        futureEventsTableViewController *futureEventsTVC = [[navigationController viewControllers] lastObject];
+        futureEventsTVC.user = self.user;
+    }
+
 }
 
 //the setter for user, and we also set the welcome lable in this setter

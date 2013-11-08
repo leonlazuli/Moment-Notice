@@ -71,7 +71,8 @@
         // get the information of that user
         
         // then init the logInUer
-        [self.logInUser initWithUserID:@"leon" password:@"123456" nakename:@"leonLiu" usertype:PRIMARY_USER pairedUser:@"chen" block1:NO blicK2:NO];
+        MNUser* tempuser = [[MNUser alloc ] initWithUserID:@"leon" password:@"123456" nakename:@"leonLiu" usertype:PRIMARY_USER pairedUser:@"chen" block1:NO blicK2:NO];
+        self.logInUser = tempuser;
         [self performSegueWithIdentifier:@"primaryLogin" sender:self];
     }
     else
