@@ -14,6 +14,7 @@
 
 -(id) initWithUserFetchPastEvents:(MNUser*)user;
 -(id) initWithUserFetchFutureEvents:(MNUser *)user;
+-(NSUInteger) count;
 
 -(MNEvent*) fectchEventByIndex:(int) index;
 

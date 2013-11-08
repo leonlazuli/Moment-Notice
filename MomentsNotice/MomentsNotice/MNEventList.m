@@ -13,6 +13,20 @@
 @end
 
 @implementation MNEventList
+
+-(NSUInteger) count
+{
+    return [self.eventlist count];
+}
+
+-(id) init
+{
+    self = [super init];
+    self.eventlist = [[NSMutableArray alloc] init];
+    return self;
+    
+}
+
 -(id) initWithUserFetchPastEvents:(MNUser*)user
 {
     //you need user [NSDate date] to fech current time and compare them with the events the database to check whecher it is a pastevent or future event
@@ -29,6 +43,7 @@
     MNEvent* event2 = [[MNEvent alloc] initWithTitle:@"rocket" detail:@"" fromDate:fromdate toDate:todate creatorID:user.userID];
     [self.eventlist addObject:event1];
     [self.eventlist addObject:event2];
+    event2 = self.eventlist[0];
     return self;
     //demo
     
