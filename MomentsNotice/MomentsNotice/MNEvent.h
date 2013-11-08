@@ -24,7 +24,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -(void) initWithTitle:(NSString*)title
+=======
+-(id) initWithTitle:(NSString*)titile
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 -(id) initWithTitle:(NSString*)titile
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -43,7 +47,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -(void) reloadWithTitle:(NSString*)title
+=======
+-(id) initReloadWithTitle:(NSString*)titile
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 -(id) initReloadWithTitle:(NSString*)titile
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
