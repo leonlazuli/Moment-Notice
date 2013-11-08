@@ -9,6 +9,19 @@
 #import "MNUser.h"
 
 @implementation MNUser
+
+-(id) init   // this init is not necessary, just for resisting potential risk
+{
+    self = [super init];
+    self.userID = [[NSString alloc] init];
+    self.nickName = [[NSString alloc] init];
+    self.userType = [[NSNumber alloc] init];
+    self.password = [[NSString alloc] init];
+    self.pairedUserID = [[NSString alloc] init];
+    return self;
+    
+}
+
 -(id) initWithUserID:(NSString*) userID
               password:(NSString*) password
               nakename:(NSString*) nickname

@@ -9,6 +9,21 @@
 #import "MNEvent.h"
 
 @implementation MNEvent
+
+-(id) init
+{
+    self = [super init];
+    self.titile = [[NSString alloc] init];
+    self.detail = [[NSString alloc] init];
+    self.fromDate = [[NSDate alloc] init];
+    self.toDate = [[NSDate alloc] init];
+    self.creatorID = [[NSString alloc] init];
+    self.creatDate = [NSDate date];
+    return self;
+    
+    
+}
+
 -(id) initWithTitle:(NSString*)titile
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
