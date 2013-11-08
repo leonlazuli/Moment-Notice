@@ -13,11 +13,7 @@
 
 
 @interface MNUser : NSObject
-{
-    BOOL block1;//for the future use.
-    BOOL block2;
-    // more blocks
-}
+
 @property(nonatomic,strong) NSString* userID;
 @property(nonatomic,strong) NSString* nickName;
 // just a nickName, not the identifier
@@ -27,6 +23,10 @@
 
 @property(nonatomic, strong) NSString* password;
 @property(nonatomic, strong) NSString* pairedUserID;
+@property BOOL block1;//for the future use.
+@property BOOL block2;
+// more blocks
+
 
 -(void) initWithUserID:(NSString*) userID
               password:(NSString*) password

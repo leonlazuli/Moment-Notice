@@ -24,6 +24,8 @@
 		692A8AF0182B041E00D5B741 /* MomentsNoticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 692A8AEF182B041E00D5B741 /* MomentsNoticeTests.m */; };
 		692A8AFB182B04B200D5B741 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692A8AFA182B04B200D5B741 /* LogInViewController.m */; };
 		692A8B01182B262300D5B741 /* PrimaryLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692A8B00182B262300D5B741 /* PrimaryLoginViewController.m */; };
+		698284FF182C2DF10087065B /* MNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 698284FE182C2DF10087065B /* MNEvent.m */; };
+		69828502182C37640087065B /* MNEventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69828501182C37640087065B /* MNEventList.m */; };
 		69CFBAE1182B4FA200B74101 /* AssistantLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */; };
 		69CFBAE4182B501800B74101 /* MNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE3182B501800B74101 /* MNUser.m */; };
 		69CFBAE7182B686000B74101 /* primaryMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */; };
@@ -65,6 +67,10 @@
 		692A8AFA182B04B200D5B741 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		692A8AFF182B262300D5B741 /* PrimaryLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimaryLoginViewController.h; sourceTree = "<group>"; };
 		692A8B00182B262300D5B741 /* PrimaryLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryLoginViewController.m; sourceTree = "<group>"; };
+		698284FD182C2DF10087065B /* MNEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEvent.h; sourceTree = "<group>"; };
+		698284FE182C2DF10087065B /* MNEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEvent.m; sourceTree = "<group>"; };
+		69828500182C37640087065B /* MNEventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEventList.h; sourceTree = "<group>"; };
+		69828501182C37640087065B /* MNEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEventList.m; sourceTree = "<group>"; };
 		69CFBADF182B4FA200B74101 /* AssistantLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistantLogInViewController.h; sourceTree = "<group>"; };
 		69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistantLogInViewController.m; sourceTree = "<group>"; };
 		69CFBAE2182B501800B74101 /* MNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNUser.h; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 				692A8ACD182B041E00D5B741 /* MNAppDelegate.h */,
 				692A8ACE182B041E00D5B741 /* MNAppDelegate.m */,
 				692A8AD6182B041E00D5B741 /* MainStoryboard.storyboard */,
+				698284FD182C2DF10087065B /* MNEvent.h */,
+				698284FE182C2DF10087065B /* MNEvent.m */,
+				69828500182C37640087065B /* MNEventList.h */,
+				69828501182C37640087065B /* MNEventList.m */,
 				69CFBAE8182B798D00B74101 /* EventsViewController.h */,
 				69CFBAE9182B798D00B74101 /* EventsViewController.m */,
 				69CFBAE5182B686000B74101 /* primaryMainMenuViewController.h */,
@@ -304,6 +314,8 @@
 				69CFBAE4182B501800B74101 /* MNUser.m in Sources */,
 				69CFBAE7182B686000B74101 /* primaryMainMenuViewController.m in Sources */,
 				69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */,
+				698284FF182C2DF10087065B /* MNEvent.m in Sources */,
+				69828502182C37640087065B /* MNEventList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

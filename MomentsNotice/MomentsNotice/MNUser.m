@@ -23,8 +23,8 @@
     self.userType = userType;
     self.password = password;
     self.pairedUserID = pairedUserID;
-    self->block1 = b1;
-    self->block2 = b2;
+    self.block1 = b1;
+    self.block2 = b2;
 }
 
 -(void) syncUserData
