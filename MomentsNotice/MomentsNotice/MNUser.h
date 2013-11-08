@@ -28,7 +28,7 @@
 // more blocks
 
 
--(void) initWithUserID:(NSString*) userID
+-(id) initWithUserID:(NSString*) userID
               password:(NSString*) password
               nakename:(NSString*) nickname
               usertype:(NSNumber*) userType

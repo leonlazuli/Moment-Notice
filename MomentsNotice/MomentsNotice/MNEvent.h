@@ -21,14 +21,14 @@
 @property BOOL passed;
 
 //for the creation of a new event
--(void) initWithTitle:(NSString*)titile
+-(id) initWithTitle:(NSString*)titile
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
                toDate:(NSDate*)todate
             creatorID:(NSString*)creatorid;
 
 //for reloading events from database
--(void) reloadWithTitle:(NSString*)titile
+-(id) initReloadWithTitle:(NSString*)titile
                  detail:(NSString*)detail
                fromDate:(NSDate*)fromdate
                  toDate:(NSDate*)todate

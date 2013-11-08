@@ -13,22 +13,35 @@
 @end
 
 @implementation MNEventList
--(void) initWithUserFetchPastEvents:(MNUser*)user
+-(id) initWithUserFetchPastEvents:(MNUser*)user
 {
     //you need user [NSDate date] to fech current time and compare them with the events the database to check whecher it is a pastevent or future event
-    
-    [self init];
     //use the userID to fetch the event from the database and add to eventlist
     //use the userID's pairedID to fetch the event from database
+    
+    //demo
+    self = [self init];
+    NSDate* createdate = [NSDate date];
+    NSDate* fromdate = [createdate addTimeInterval:300];
+    NSDate* todate = [createdate addTimeInterval:600];
+    NSDate* createdate2 = [createdate addTimeInterval:120];
+    MNEvent* event1 = [[MNEvent alloc] initWithTitle:@"helloworld" detail:@"hahaa" fromDate:fromdate toDate:todate creatorID:user.userID];
+    MNEvent* event2 = [[MNEvent alloc] initWithTitle:@"rocket" detail:@"" fromDate:fromdate toDate:todate creatorID:user.userID];
+    [self.eventlist addObject:event1];
+    [self.eventlist addObject:event2];
+    return self;
+    //demo
     
 }
 
--(void) initWithUserFetchFutureEvents:(MNUser *)user
+-(id) initWithUserFetchFutureEvents:(MNUser *)user
 {
     //you need user [NSDate date] to fech current time and compare them with the events the database to check whecher it is a pastevent or future event
-    [self init];
+    self = [self init];
     //use the userID to fetch the event from the database and add to eventlist
     //use the userID's pairedID to fetch the event from database
+    
+    return self;
 }
 
 -(MNEvent*) fectchEventByIndex:(int) index

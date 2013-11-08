@@ -12,8 +12,8 @@
 
 @interface MNEventList: NSObject
 
--(void) initWithUserFetchPastEvents:(MNUser*)user;
--(void) initWithUserFetchFutureEvents:(MNUser *)user;
+-(id) initWithUserFetchPastEvents:(MNUser*)user;
+-(id) initWithUserFetchFutureEvents:(MNUser *)user;
 
 -(MNEvent*) fectchEventByIndex:(int) index;
 
