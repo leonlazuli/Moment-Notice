@@ -6,7 +6,15 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 	<string>12CE68E3-AFC1-4998-995B-EBEA6E2B97B3</string>
+=======
+	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -15,7 +23,15 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 		<key>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</key>
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -26,7 +42,15 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 		<key>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</key>
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -38,7 +62,15 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 	<string>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</string>
+=======
+	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -49,7 +81,15 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 			<string>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</string>
+=======
+			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363

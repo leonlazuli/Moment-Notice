@@ -10,8 +10,14 @@
 
 @implementation MNEvent
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 -(void) initWithTitle:(NSString*)title
 =======
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 
 -(id) init
 {
@@ -28,6 +34,12 @@
 }
 
 -(id) initWithTitle:(NSString*)titile
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
                detail:(NSString*)detail
              fromDate:(NSDate*)fromdate
@@ -35,9 +47,15 @@
             creatorID:(NSString*)creatorid
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     [self init];
     self.title = title;
 =======
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
     self.titile = titile;
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -54,7 +72,15 @@
 
 //for reloading events from database
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 -(void) reloadWithTitle:(NSString*)title
+=======
+-(id) initReloadWithTitle:(NSString*)titile
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+-(id) initReloadWithTitle:(NSString*)titile
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 =======
 -(id) initReloadWithTitle:(NSString*)titile
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
@@ -67,9 +93,15 @@
                  passed:(BOOL)p
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     [self init];
     self.title = title;
 =======
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+=======
+>>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
     self.titile = titile;
 >>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
