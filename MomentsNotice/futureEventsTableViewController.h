@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "MNUser.h"
 #import "MNEventList.h"
+#import <Parse/Parse.h>
 
-@interface futureEventsTableViewController : UITableViewController
+//@interface futureEventsTableViewController : UITableViewController
+@interface futureEventsTableViewController : PFQueryTableViewController
+
+
+
 @property (strong, nonatomic) MNUser* user;
 @end

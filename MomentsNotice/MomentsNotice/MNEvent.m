@@ -5,27 +5,14 @@
 //  Created by LiuLeon on 11/7/2013.
 //  Copyright (c) 2013 LiuLeon. All rights reserved.
 //
-
 #import "MNEvent.h"
 
 @implementation MNEvent
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) initWithTitle:(NSString*)title
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
 
 -(id) init
 {
     self = [super init];
-    self.titile = [[NSString alloc] init];
+    self.title = [[NSString alloc] init];
     self.detail = [[NSString alloc] init];
     self.fromDate = [[NSDate alloc] init];
     self.toDate = [[NSDate alloc] init];
@@ -36,38 +23,14 @@
     
 }
 
--(id) initWithTitle:(NSString*)titile
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-               detail:(NSString*)detail
-             fromDate:(NSDate*)fromdate
-               toDate:(NSDate*)todate
-            creatorID:(NSString*)creatorid
+-(id) initWithTitle:(NSString*)title
+             detail:(NSString*)detail
+           fromDate:(NSDate*)fromdate
+             toDate:(NSDate*)todate
+          creatorID:(NSString*)creatorid
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    [self init];
-    self.title = title;
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
-    self.titile = titile;
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+    self.title = title;
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
@@ -80,47 +43,17 @@
 }
 
 //for reloading events from database
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) reloadWithTitle:(NSString*)title
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-                 detail:(NSString*)detail
-               fromDate:(NSDate*)fromdate
-                 toDate:(NSDate*)todate
-              creatorID:(NSString*)creatorid
-              creatDate:(NSDate*)creatdate
-              completed:(BOOL)c
-                 passed:(BOOL)p
+-(id) initReloadWithTitle:(NSString*)title
+                   detail:(NSString*)detail
+                 fromDate:(NSDate*)fromdate
+                   toDate:(NSDate*)todate
+                creatorID:(NSString*)creatorid
+                creatDate:(NSDate*)creatdate
+                completed:(BOOL)c
+                   passed:(BOOL)p
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    [self init];
-    self.title = title;
-=======
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
     self = [self init];
-    self.titile = titile;
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+    self.title = title;
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
@@ -132,7 +65,7 @@
     
 }
 
-//generic funtion to transform date to a string 
+//generic funtion to transform date to a string
 -(NSString*) stringOfDate:(NSDate*)date
 {
     NSString* tempDate = [[NSString alloc] init];
@@ -156,6 +89,22 @@
     return [self stringOfDate:self.creatDate];
 }
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

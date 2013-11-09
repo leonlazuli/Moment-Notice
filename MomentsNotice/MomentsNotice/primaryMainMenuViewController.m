@@ -33,7 +33,7 @@
         navigationController = (UINavigationController*)[[tbc customizableViewControllers] objectAtIndex:0];
         //use the navigationController to fecth the editEventController object
         futureEventsTableViewController *futureEventsTVC = [[navigationController viewControllers] lastObject];
-        futureEventsTVC.user = self.user;
+      futureEventsTVC.user = self.user;
     }
 
 }

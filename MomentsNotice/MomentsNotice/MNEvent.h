@@ -21,53 +21,21 @@
 @property BOOL passed;
 
 //for the creation of a new event
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) initWithTitle:(NSString*)title
-=======
--(id) initWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-               detail:(NSString*)detail
-             fromDate:(NSDate*)fromdate
-               toDate:(NSDate*)todate
-            creatorID:(NSString*)creatorid;
+-(id) initWithTitle:(NSString*)title
+             detail:(NSString*)detail
+           fromDate:(NSDate*)fromdate
+             toDate:(NSDate*)todate
+          creatorID:(NSString*)creatorid;
 
 //for reloading events from database
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
--(void) reloadWithTitle:(NSString*)title
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
--(id) initReloadWithTitle:(NSString*)titile
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-                 detail:(NSString*)detail
-               fromDate:(NSDate*)fromdate
-                 toDate:(NSDate*)todate
-              creatorID:(NSString*)creatorid
-              creatDate:(NSDate*)creatdate
-              completed:(BOOL)completed
-                 passed:(BOOL)passed;
+-(id) initReloadWithTitle:(NSString*)title
+                   detail:(NSString*)detail
+                 fromDate:(NSDate*)fromdate
+                   toDate:(NSDate*)todate
+                creatorID:(NSString*)creatorid
+                creatDate:(NSDate*)creatdate
+                completed:(BOOL)completed
+                   passed:(BOOL)passed;
 
 -(NSString*) stringOfFromDate;
 -(NSString*) stringOfToDate;

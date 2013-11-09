@@ -39,10 +39,9 @@
     NSDate* fromdate = [createdate addTimeInterval:300];
     NSDate* todate = [createdate addTimeInterval:600];
     NSDate* createdate2 = [createdate addTimeInterval:120];
-    MNEvent* event1 = [[MNEvent alloc] initWithTitle:@"helloworld" detail:@"hahaa" fromDate:fromdate toDate:todate creatorID:user.userID];
-    MNEvent* event2 = [[MNEvent alloc] initWithTitle:@"rocket" detail:@"" fromDate:fromdate toDate:todate creatorID:user.userID];
-    [self.eventlist addObject:event1];
-    [self.eventlist addObject:event2];
+  //  MNEvent* event1 = [[MNEvent alloc] initWithTitle:@"helloworld" detail:@"hahaa" fromDate:fromdate toDate:todate creatorID:user.userID];    MNEvent* event2 = [[MNEvent alloc] initWithTitle:@"rocket" detail:@"" fromDate:fromdate toDate:todate creatorID:user.userID];
+   // [self.eventlist addObject:event1];
+   // [self.eventlist addObject:event2];
     return self;
     //demo
     

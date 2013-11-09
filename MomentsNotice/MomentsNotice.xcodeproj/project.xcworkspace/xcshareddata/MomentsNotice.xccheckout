@@ -5,67 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<string>12CE68E3-AFC1-4998-995B-EBEA6E2B97B3</string>
-=======
-	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+	<string>250063D0-65C1-43DB-AF20-C57A4DEB72FB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MomentsNotice</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</key>
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+		<key>B9C1FC17-2677-4B66-9583-01360D769661</key>
 		<string>https://github.com/leon-lazuli/Moment-Notice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MomentsNotice/MomentsNotice.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<key>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</key>
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+		<key>B9C1FC17-2677-4B66-9583-01360D769661</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -73,46 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<string>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</string>
-=======
-	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+	<string>B9C1FC17-2677-4B66-9583-01360D769661</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<string>496BBCC8-AEFB-4F92-8D3C-23231759B8D2</string>
-=======
-			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
-=======
-			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
->>>>>>> 9cf97bc9734ae8e3b289f7289c859c6cc202b363
+			<string>B9C1FC17-2677-4B66-9583-01360D769661</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Moment-Notice</string>
 		</dict>
