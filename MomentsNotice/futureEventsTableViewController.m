@@ -17,6 +17,21 @@
 
 @implementation futureEventsTableViewController
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// delete button
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self.eventList deleteEventByIndex:indexPath.row];
+        [self.tableView reloadData];
+    }
+}
+
 -(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)segue
 {
 
