@@ -48,6 +48,7 @@
     
 }
 
+
 -(id) initWithUserFetchFutureEvents:(MNUser *)user
 {
     //you need user [NSDate date] to fech current time and compare them with the events the database to check whecher it is a pastevent or future event

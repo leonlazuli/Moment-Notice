@@ -7,12 +7,35 @@
 //
 
 #import "futureEventsTableViewController.h"
+#import "eventAddViewController.h"
 
 @interface futureEventsTableViewController ()
 @property MNEventList* eventList;
 @end
 
 @implementation futureEventsTableViewController
+
+-(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)segue
+{
+    eventAddViewController* eventAddVC = [segue sourceViewController];
+    MNEvent *newevent = eventAddVC.event;
+    if(newevent != Nil)
+    {
+        [self.eventList addEvent:newevent];
+        [self.tableView reloadData];
+    }
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"eventTableToAdd"])
+    {
+        UINavigationController *navigator = [[UINavigationController alloc] init];
+        navigator = [segue destinationViewController];
+        eventAddViewController *eventAddVc = [[navigator viewControllers] lastObject];
+        eventAddVc.user = self.user;
+    }
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -23,10 +46,7 @@
     return self;
 }
 
--(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)sender
-{
-    
-}
+
 
 - (void)viewDidLoad
 {

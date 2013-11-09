@@ -28,6 +28,19 @@
     return self;
 }
 
++(MNUser*) checkUserID:(NSString*) userID
+              password:(NSString*) password
+{
+    //check from database
+    //if valid, then fetch all information, then initial all MNUser object return it
+    //???
+    //else return nil.
+    //
+}
+
+//add a exist user object to database
+
+
 -(void) syncUserData
 {
     //???

@@ -36,6 +36,13 @@
                 block1:(BOOL) b1
                 blicK2:(BOOL) b2;
 
+//use the userID and userPassword to check whether the pass word is right
+//if userID and uerPassWord are valid, then return a MNUser, else return nil;
++(MNUser*) checkUserID:(NSString*) userID
+         password:(NSString*) password;
+
+//add a exist user object to database
+
 -(void) syncUserData; // to syncNize the userdata to the database
 
 
