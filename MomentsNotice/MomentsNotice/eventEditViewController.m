@@ -1,23 +1,24 @@
 //
-//  eventAddViewController.m
+//  eventEditViewController.m
 //  MomentsNotice
 //
 //  Created by LiuLeon on 11/8/2013.
 //  Copyright (c) 2013 LiuLeon. All rights reserved.
 //
 
-#import "eventAddViewController.h"
+#import "eventEditViewController.h"
 
-@interface eventAddViewController () <UITextFieldDelegate, UITextViewDelegate>
+@interface eventEditViewController () <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *fromDateTextField;
 @property (weak, nonatomic) IBOutlet UITextField *toDateTexeField;
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UILabel *completedLabel;
 
 @end
 
-@implementation eventAddViewController
+@implementation eventEditViewController
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -34,7 +35,7 @@
     {
         UIAlertView *alert = [[UIAlertView alloc]
                               initWithTitle:@"Error"
-                              message:@"From date is earlier than current date"
+                              message:@"From date is earlier than current date, Edit failed"
                               delegate:nil
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil];
@@ -46,7 +47,7 @@
     {
         UIAlertView *alert = [[UIAlertView alloc]
                               initWithTitle:@"Error"
-                              message:@"From date is later than To date"
+                              message:@"From date is later than To date, Edit faild"
                               delegate:nil
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil];
@@ -54,7 +55,7 @@
         return;
     }
     
-    self.event = [[MNEvent alloc] initWithTitle:title detail:description fromDate:fromdate toDate:todate creatorID:creatorID];
+    self.event = [[MNEvent alloc] initReloadWithTitle:title detail:description fromDate:fromdate toDate:todate creatorID:creatorID creatDate:self.event.creatDate completed:self.event.completed passed:self.event.passed];
 }
 
 // to dismiss the keyboard when user click return  in the descriptionTextField
@@ -92,10 +93,10 @@
 {
     if(textField == self.fromDateTextField)
     {
-    UIDatePicker *datePicker = [[UIDatePicker alloc]init];
-    [datePicker setDate:[NSDate date]];
-    [datePicker addTarget:self action:@selector(updateFromDateField:) forControlEvents:UIControlEventValueChanged];
-    [self.fromDateTextField setInputView:datePicker];
+        UIDatePicker *datePicker = [[UIDatePicker alloc]init];
+        [datePicker setDate:[NSDate date]];
+        [datePicker addTarget:self action:@selector(updateFromDateField:) forControlEvents:UIControlEventValueChanged];
+        [self.fromDateTextField setInputView:datePicker];
     }
     
     if(textField == self.toDateTexeField)
@@ -151,6 +152,14 @@
     self.titleTextField.delegate = self;
     self.descriptionTextField.delegate = self;
     self.titleTextField.text = self.user.userID;
+    self.titleTextField.text = self.event.titile;
+    self.fromDateTextField.text = [self.event stringOfFromDate];
+    self.toDateTexeField.text = [self.event stringOfToDate];
+    self.descriptionTextField.text = self.event.detail;
+    if(self.event.completed)
+        self.completedLabel.text = @"YES";
+    else
+        self.completedLabel.text = @"NO";
 	// Do any additional setup after loading the view.
 }
 

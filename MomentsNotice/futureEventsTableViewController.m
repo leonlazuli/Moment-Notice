@@ -8,22 +8,39 @@
 
 #import "futureEventsTableViewController.h"
 #import "eventAddViewController.h"
+#import "eventEditViewController.h"
 
 @interface futureEventsTableViewController ()
 @property MNEventList* eventList;
+@property int selecedRow;
 @end
 
 @implementation futureEventsTableViewController
 
 -(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)segue
 {
-    eventAddViewController* eventAddVC = [segue sourceViewController];
+
+        eventAddViewController* eventAddVC = [segue sourceViewController];
+        MNEvent *newevent = eventAddVC.event;
+        if(newevent != Nil)
+        {
+            [self.eventList addEvent:newevent];
+            [self.tableView reloadData];
+        }
+    
+}
+
+-(IBAction)unwindFromEditEvent:(UIStoryboardSegue*)segue
+{
+    
+    eventEditViewController* eventAddVC = [segue sourceViewController];
     MNEvent *newevent = eventAddVC.event;
     if(newevent != Nil)
     {
-        [self.eventList addEvent:newevent];
+        [self.eventList editEventByIndex:self.selecedRow withEvent:newevent];
         [self.tableView reloadData];
     }
+    
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -35,6 +52,18 @@
         eventAddViewController *eventAddVc = [[navigator viewControllers] lastObject];
         eventAddVc.user = self.user;
     }
+    
+    if([[segue identifier] isEqualToString:@"eventTableToEdit"])
+    {
+        UINavigationController *navigator = [[UINavigationController alloc] init];
+        navigator = [segue destinationViewController];
+        eventEditViewController *eventEditVc = [[navigator viewControllers] lastObject];
+        eventEditVc.user = self.user;
+        NSIndexPath *indexpath = [self.tableView indexPathForCell:sender];
+        eventEditVc.event = [self.eventList fectchEventByIndex:indexpath.row];
+        self.selecedRow = indexpath.row;
+    }
+    
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -88,7 +117,7 @@
     MNEvent *event = [self.eventList fectchEventByIndex:indexPath.row];
     cell.textLabel.text = event.titile;
     cell.detailTextLabel.text = [event stringOfFromDate];
-    
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 

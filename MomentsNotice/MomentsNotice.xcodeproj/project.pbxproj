@@ -27,6 +27,7 @@
 		698284FF182C2DF10087065B /* MNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 698284FE182C2DF10087065B /* MNEvent.m */; };
 		69828502182C37640087065B /* MNEventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69828501182C37640087065B /* MNEventList.m */; };
 		69828508182CB4390087065B /* futureEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69828507182CB4390087065B /* futureEventsTableViewController.m */; };
+		699988B0182E0B5000836884 /* eventEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699988AF182E0B5000836884 /* eventEditViewController.m */; };
 		699A8654182DD92D00371868 /* eventAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699A8653182DD92D00371868 /* eventAddViewController.m */; };
 		69CFBAE1182B4FA200B74101 /* AssistantLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */; };
 		69CFBAE4182B501800B74101 /* MNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE3182B501800B74101 /* MNUser.m */; };
@@ -75,6 +76,8 @@
 		69828501182C37640087065B /* MNEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEventList.m; sourceTree = "<group>"; };
 		69828506182CB4390087065B /* futureEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = futureEventsTableViewController.h; sourceTree = "<group>"; };
 		69828507182CB4390087065B /* futureEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = futureEventsTableViewController.m; sourceTree = "<group>"; };
+		699988AE182E0B5000836884 /* eventEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventEditViewController.h; sourceTree = "<group>"; };
+		699988AF182E0B5000836884 /* eventEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventEditViewController.m; sourceTree = "<group>"; };
 		699A8652182DD92D00371868 /* eventAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventAddViewController.h; sourceTree = "<group>"; };
 		699A8653182DD92D00371868 /* eventAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventAddViewController.m; sourceTree = "<group>"; };
 		69CFBADF182B4FA200B74101 /* AssistantLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistantLogInViewController.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				692A8AD6182B041E00D5B741 /* MainStoryboard.storyboard */,
+				699988AE182E0B5000836884 /* eventEditViewController.h */,
+				699988AF182E0B5000836884 /* eventEditViewController.m */,
 				699A8652182DD92D00371868 /* eventAddViewController.h */,
 				699A8653182DD92D00371868 /* eventAddViewController.m */,
 				692A8ACD182B041E00D5B741 /* MNAppDelegate.h */,
@@ -327,6 +332,7 @@
 				69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */,
 				698284FF182C2DF10087065B /* MNEvent.m in Sources */,
 				69828502182C37640087065B /* MNEventList.m in Sources */,
+				699988B0182E0B5000836884 /* eventEditViewController.m in Sources */,
 				69828508182CB4390087065B /* futureEventsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
