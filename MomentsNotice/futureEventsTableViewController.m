@@ -7,13 +7,21 @@
 //
 
 #import "futureEventsTableViewController.h"
+#import "eventAddViewController.h"
+#import "eventEditViewController.h"
 
 @interface futureEventsTableViewController ()
+<<<<<<< HEAD
 //@property MNEventList* eventList;
+=======
+@property MNEventList* eventList;
+@property int selecedRow;
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 @end
 
 @implementation futureEventsTableViewController
 
+<<<<<<< HEAD
 - (id)initWithCoder:(NSCoder *)aCoder
 {
     self = [super initWithCoder:aCoder];
@@ -37,6 +45,72 @@
     }
     return self;
 }
+=======
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// delete button
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [self.eventList deleteEventByIndex:indexPath.row];
+        [self.tableView reloadData];
+    }
+}
+
+-(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)segue
+{
+
+        eventAddViewController* eventAddVC = [segue sourceViewController];
+        MNEvent *newevent = eventAddVC.event;
+        if(newevent != Nil)
+        {
+            [self.eventList addEvent:newevent];
+            [self.tableView reloadData];
+        }
+    
+}
+
+-(IBAction)unwindFromEditEvent:(UIStoryboardSegue*)segue
+{
+    
+    eventEditViewController* eventAddVC = [segue sourceViewController];
+    MNEvent *newevent = eventAddVC.event;
+    if(newevent != Nil)
+    {
+        [self.eventList editEventByIndex:self.selecedRow withEvent:newevent];
+        [self.tableView reloadData];
+    }
+    
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"eventTableToAdd"])
+    {
+        UINavigationController *navigator = [[UINavigationController alloc] init];
+        navigator = [segue destinationViewController];
+        eventAddViewController *eventAddVc = [[navigator viewControllers] lastObject];
+        eventAddVc.user = self.user;
+    }
+    
+    if([[segue identifier] isEqualToString:@"eventTableToEdit"])
+    {
+        UINavigationController *navigator = [[UINavigationController alloc] init];
+        navigator = [segue destinationViewController];
+        eventEditViewController *eventEditVc = [[navigator viewControllers] lastObject];
+        eventEditVc.user = self.user;
+        NSIndexPath *indexpath = [self.tableView indexPathForCell:sender];
+        eventEditVc.event = [self.eventList fectchEventByIndex:indexpath.row];
+        self.selecedRow = indexpath.row;
+    }
+    
+}
+
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -46,10 +120,7 @@
     return self;
 }
 
--(IBAction)unwindFromAddEvent:(UIStoryboardSegue*)sender
-{
-    
-}
+
 
 - (void)viewDidLoad
 {
@@ -148,7 +219,7 @@ cell.textLabel.text= [object objectForKey:@ "title"];
     MNEvent *event = [self.eventList fectchEventByIndex:indexPath.row];
     cell.textLabel.text = event.title;
     cell.detailTextLabel.text = [event stringOfFromDate];
-    
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 */

@@ -26,10 +26,13 @@
 		698284FF182C2DF10087065B /* MNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 698284FE182C2DF10087065B /* MNEvent.m */; };
 		69828502182C37640087065B /* MNEventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 69828501182C37640087065B /* MNEventList.m */; };
 		69828508182CB4390087065B /* futureEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69828507182CB4390087065B /* futureEventsTableViewController.m */; };
+		699988B0182E0B5000836884 /* eventEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699988AF182E0B5000836884 /* eventEditViewController.m */; };
+		699A8654182DD92D00371868 /* eventAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699A8653182DD92D00371868 /* eventAddViewController.m */; };
 		69CFBAE1182B4FA200B74101 /* AssistantLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */; };
 		69CFBAE4182B501800B74101 /* MNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE3182B501800B74101 /* MNUser.m */; };
 		69CFBAE7182B686000B74101 /* primaryMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */; };
 		69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CFBAE9182B798D00B74101 /* EventsViewController.m */; };
+<<<<<<< HEAD
 		B914A50D182E0003001A15C2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B914A50B182E0003001A15C2 /* MainStoryboard.storyboard */; };
 		B97BBFED182C899500AB412E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BBFEC182C899500AB412E /* Parse.framework */; };
 		B97BBFEF182C89DE00AB412E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BBFEE182C89DE00AB412E /* AudioToolbox.framework */; };
@@ -41,6 +44,8 @@
 		B97BBFFB182C8A3E00AB412E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BBFFA182C8A3E00AB412E /* Security.framework */; };
 		B97BBFFD182C8A4400AB412E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BBFFC182C8A4400AB412E /* StoreKit.framework */; };
 		B97BBFFF182C8A4A00AB412E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97BBFFE182C8A4A00AB412E /* SystemConfiguration.framework */; };
+=======
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,10 @@
 		69828501182C37640087065B /* MNEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEventList.m; sourceTree = "<group>"; };
 		69828506182CB4390087065B /* futureEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = futureEventsTableViewController.h; sourceTree = "<group>"; };
 		69828507182CB4390087065B /* futureEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = futureEventsTableViewController.m; sourceTree = "<group>"; };
+		699988AE182E0B5000836884 /* eventEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventEditViewController.h; sourceTree = "<group>"; };
+		699988AF182E0B5000836884 /* eventEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventEditViewController.m; sourceTree = "<group>"; };
+		699A8652182DD92D00371868 /* eventAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventAddViewController.h; sourceTree = "<group>"; };
+		699A8653182DD92D00371868 /* eventAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventAddViewController.m; sourceTree = "<group>"; };
 		69CFBADF182B4FA200B74101 /* AssistantLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssistantLogInViewController.h; sourceTree = "<group>"; };
 		69CFBAE0182B4FA200B74101 /* AssistantLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssistantLogInViewController.m; sourceTree = "<group>"; };
 		69CFBAE2182B501800B74101 /* MNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNUser.h; sourceTree = "<group>"; };
@@ -91,6 +100,7 @@
 		69CFBAE6182B686000B74101 /* primaryMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = primaryMainMenuViewController.m; sourceTree = "<group>"; };
 		69CFBAE8182B798D00B74101 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		69CFBAE9182B798D00B74101 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		B914A50C182E0003001A15C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "../../../Desktop/Moment-Notice-9cf97bc9734ae8e3b289f7289c859c6cc202b363/MomentsNotice/MomentsNotice/en.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		B97BBFEC182C899500AB412E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Desktop/Parse.framework; sourceTree = "<group>"; };
 		B97BBFEE182C89DE00AB412E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -102,6 +112,8 @@
 		B97BBFFA182C8A3E00AB412E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B97BBFFC182C8A4400AB412E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B97BBFFE182C8A4A00AB412E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+=======
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,19 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B97BBFFF182C8A4A00AB412E /* SystemConfiguration.framework in Frameworks */,
-				B97BBFFD182C8A4400AB412E /* StoreKit.framework in Frameworks */,
-				B97BBFFB182C8A3E00AB412E /* Security.framework in Frameworks */,
-				B97BBFF9182C8A3400AB412E /* QuartzCore.framework in Frameworks */,
-				B97BBFF7182C8A2900AB412E /* MobileCoreServices.framework in Frameworks */,
-				B97BBFF5182C8A1A00AB412E /* libz.1.1.3.dylib in Frameworks */,
-				B97BBFF3182C89FD00AB412E /* CoreLocation.framework in Frameworks */,
-				B97BBFF1182C89F000AB412E /* CFNetwork.framework in Frameworks */,
-				B97BBFEF182C89DE00AB412E /* AudioToolbox.framework in Frameworks */,
 				692A8ABF182B041E00D5B741 /* UIKit.framework in Frameworks */,
 				692A8AC1182B041E00D5B741 /* Foundation.framework in Frameworks */,
 				692A8AC3182B041E00D5B741 /* CoreGraphics.framework in Frameworks */,
-				B97BBFED182C899500AB412E /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,16 +170,6 @@
 		692A8ABD182B041E00D5B741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B97BBFFC182C8A4400AB412E /* StoreKit.framework */,
-				B97BBFFA182C8A3E00AB412E /* Security.framework */,
-				B97BBFF8182C8A3400AB412E /* QuartzCore.framework */,
-				B97BBFF6182C8A2900AB412E /* MobileCoreServices.framework */,
-				B97BBFF4182C8A1A00AB412E /* libz.1.1.3.dylib */,
-				B97BBFF2182C89FD00AB412E /* CoreLocation.framework */,
-				B97BBFF0182C89F000AB412E /* CFNetwork.framework */,
-				B97BBFEE182C89DE00AB412E /* AudioToolbox.framework */,
-				B97BBFFE182C8A4A00AB412E /* SystemConfiguration.framework */,
-				B97BBFEC182C899500AB412E /* Parse.framework */,
 				692A8ABE182B041E00D5B741 /* UIKit.framework */,
 				692A8AC0182B041E00D5B741 /* Foundation.framework */,
 				692A8AC2182B041E00D5B741 /* CoreGraphics.framework */,
@@ -189,7 +181,15 @@
 		692A8AC4182B041E00D5B741 /* MomentsNotice */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				B914A50B182E0003001A15C2 /* MainStoryboard.storyboard */,
+=======
+				692A8AD6182B041E00D5B741 /* MainStoryboard.storyboard */,
+				699988AE182E0B5000836884 /* eventEditViewController.h */,
+				699988AF182E0B5000836884 /* eventEditViewController.m */,
+				699A8652182DD92D00371868 /* eventAddViewController.h */,
+				699A8653182DD92D00371868 /* eventAddViewController.m */,
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 				692A8ACD182B041E00D5B741 /* MNAppDelegate.h */,
 				692A8ACE182B041E00D5B741 /* MNAppDelegate.m */,
 				698284FD182C2DF10087065B /* MNEvent.h */,
@@ -352,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692A8ACB182B041E00D5B741 /* main.m in Sources */,
+				699A8654182DD92D00371868 /* eventAddViewController.m in Sources */,
 				692A8ACF182B041E00D5B741 /* MNAppDelegate.m in Sources */,
 				692A8AFB182B04B200D5B741 /* LogInViewController.m in Sources */,
 				692A8B01182B262300D5B741 /* PrimaryLoginViewController.m in Sources */,
@@ -361,6 +362,7 @@
 				69CFBAEA182B798D00B74101 /* EventsViewController.m in Sources */,
 				698284FF182C2DF10087065B /* MNEvent.m in Sources */,
 				69828502182C37640087065B /* MNEventList.m in Sources */,
+				699988B0182E0B5000836884 /* eventEditViewController.m in Sources */,
 				69828508182CB4390087065B /* futureEventsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,10 +472,6 @@
 		692A8AF4182B041E00D5B741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Desktop\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MomentsNotice/MomentsNotice-Prefix.pch";
 				INFOPLIST_FILE = "MomentsNotice/MomentsNotice-Info.plist";
@@ -485,10 +483,6 @@
 		692A8AF5182B041E00D5B741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Desktop\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MomentsNotice/MomentsNotice-Prefix.pch";
 				INFOPLIST_FILE = "MomentsNotice/MomentsNotice-Info.plist";

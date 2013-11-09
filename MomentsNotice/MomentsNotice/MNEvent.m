@@ -8,6 +8,7 @@
 #import "MNEvent.h"
 
 @implementation MNEvent
+<<<<<<< HEAD
 
 -(id) init
 {
@@ -31,6 +32,16 @@
 {
     self = [self init];
     self.title = title;
+=======
+-(id) initWithTitle:(NSString*)titile
+               detail:(NSString*)detail
+             fromDate:(NSDate*)fromdate
+               toDate:(NSDate*)todate
+            creatorID:(NSString*)creatorid
+{
+    self = [self init];
+    self.titile = titile;
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;
@@ -43,6 +54,7 @@
 }
 
 //for reloading events from database
+<<<<<<< HEAD
 -(id) initReloadWithTitle:(NSString*)title
                    detail:(NSString*)detail
                  fromDate:(NSDate*)fromdate
@@ -54,6 +66,19 @@
 {
     self = [self init];
     self.title = title;
+=======
+-(id) initReloadWithTitle:(NSString*)titile
+                 detail:(NSString*)detail
+               fromDate:(NSDate*)fromdate
+                 toDate:(NSDate*)todate
+              creatorID:(NSString*)creatorid
+              creatDate:(NSDate*)creatdate
+              completed:(BOOL)c
+                 passed:(BOOL)p
+{
+    self = [self init];
+    self.titile = titile;
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
     self.detail = detail;
     self.fromDate = fromdate;
     self.toDate = todate;

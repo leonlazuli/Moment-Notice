@@ -68,7 +68,7 @@
     //get the username and pin from database, if match performsegue, or give user some alert.
     if([self.userNameTextField.text isEqualToString:@"leon"])
     {
-        // get the information of that user
+        // get the information of that user from database
         
         // then init the logInUer
         MNUser* tempuser = [[MNUser alloc ] initWithUserID:@"leon" password:@"123456" nakename:@"leonLiu" usertype:PRIMARY_USER pairedUser:@"chen" block1:NO blicK2:NO];

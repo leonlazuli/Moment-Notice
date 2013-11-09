@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>250063D0-65C1-43DB-AF20-C57A4DEB72FB</string>
+=======
+	<string>36ECC809-9D7B-4BFC-A701-57BFD20EA44D</string>
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 	<key>IDESourceControlProjectName</key>
 	<string>MomentsNotice</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>B9C1FC17-2677-4B66-9583-01360D769661</key>
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 		<string>https://github.com/leon-lazuli/Moment-Notice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MomentsNotice/MomentsNotice.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>B9C1FC17-2677-4B66-9583-01360D769661</key>
+=======
+		<key>2456897E-E0D5-480E-AC6A-68F7DF1F812B</key>
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>B9C1FC17-2677-4B66-9583-01360D769661</string>
+=======
+	<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>B9C1FC17-2677-4B66-9583-01360D769661</string>
+=======
+			<string>2456897E-E0D5-480E-AC6A-68F7DF1F812B</string>
+>>>>>>> d63db7468cf21714840a47bd1f67bd23958c4f62
 			<key>IDESourceControlWCCName</key>
 			<string>Moment-Notice</string>
 		</dict>

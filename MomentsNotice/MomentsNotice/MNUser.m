@@ -9,19 +9,6 @@
 #import "MNUser.h"
 
 @implementation MNUser
-
--(id) init   // this init is not necessary, just for resisting potential risk
-{
-    self = [super init];
-    self.userID = [[NSString alloc] init];
-    self.nickName = [[NSString alloc] init];
-    self.userType = [[NSNumber alloc] init];
-    self.password = [[NSString alloc] init];
-    self.pairedUserID = [[NSString alloc] init];
-    return self;
-    
-}
-
 -(id) initWithUserID:(NSString*) userID
               password:(NSString*) password
               nakename:(NSString*) nickname
@@ -40,6 +27,19 @@
     self.block2 = b2;
     return self;
 }
+
++(MNUser*) checkUserID:(NSString*) userID
+              password:(NSString*) password
+{
+    //check from database
+    //if valid, then fetch all information, then initial all MNUser object return it
+    //???
+    //else return nil.
+    //
+}
+
+//add a exist user object to database
+
 
 -(void) syncUserData
 {
